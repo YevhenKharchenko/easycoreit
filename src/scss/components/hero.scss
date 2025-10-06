@@ -4,8 +4,8 @@
 }
 
 .hero-bg-wrapper {
-  padding-top: 404px;
-  padding-bottom: 32px;
+  padding-top: 340px;
+  padding-bottom: 82px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
@@ -15,8 +15,8 @@
   background-size: cover;
 
   @include media(desktop) {
-    padding-top: 271px;
-    padding-bottom: 209px;
+    padding-top: 280px;
+    padding-bottom: 218px;
     max-width: 1440px;
     background-image: url(../img/hero/hero-bg-desk.jpg);
   }
@@ -29,61 +29,43 @@
 
 .hero-main-title {
   font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.33333;
-  text-transform: uppercase;
-  color: #111;
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 1.30769;
+  text-align: center;
+  color: #e9dbc5;
   margin-bottom: 16px;
 
   @include media(desktop) {
-    font-size: 32px;
-    line-height: 1.5;
-  }
-}
-
-.hero-title-span {
-  font-size: 26px;
-  line-height: 1.23077;
-  color: #0a6847;
-
-  @include media(desktop) {
-    font-size: 52px;
-    line-height: 1.23077;
+    font-size: 62px;
+    line-height: 1.25806;
   }
 }
 
 .hero-text {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.5;
-  color: #111;
-  margin-bottom: 24px;
+  text-align: center;
+  color: #aeaeae;
+  margin-bottom: 40px;
 
   @include media(desktop) {
-    max-width: 640px;
-    margin-bottom: 40px;
+    max-width: 878px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
-.hero-btn-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-
-  @include media(desktop) {
-    flex-direction: row;
-  }
-}
-
-.hero-browse-link {
-  background: linear-gradient(180deg, #3bbb8e 0%, #0a6847 100%);
-  border-radius: 4px;
-  padding: 12px 26px;
+.hero-link {
+  background: linear-gradient(42deg, #f8392f 0%, #fe7818 100%);
+  border-radius: 8px;
+  padding: 12px 28px;
   width: 100%;
   max-width: 343px;
+  margin-left: auto;
+  margin-right: auto;
   font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 16px;
@@ -96,48 +78,14 @@
 
   &:active,
   &:focus {
-    background: #060f2b;
-    color: #fff;
+    box-shadow: 0 0 24px 0 rgba(255, 104, 0, 0.6);
   }
 
   @include media(desktop) {
     max-width: max-content;
 
     &:hover {
-      background: #060f2b;
-      color: #fff;
-    }
-  }
-}
-
-.hero-join-link {
-  border: 1px solid #0a6847;
-  border-radius: 4px;
-  padding: 12px 26px;
-  width: 100%;
-  max-width: 343px;
-  font-family: 'Manrope', sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #0a6847;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.3s ease-in-out;
-
-  &:active,
-  &:focus {
-    background: #0a6847;
-    color: #fff;
-  }
-
-  @include media(desktop) {
-    max-width: max-content;
-
-    &:hover {
-      background: #0a6847;
-      color: #fff;
+      box-shadow: 0 0 24px 0 rgba(255, 104, 0, 0.6);
     }
   }
 }

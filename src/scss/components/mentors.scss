@@ -1,0 +1,65 @@
+.mentors-section {
+  padding-bottom: 60px;
+
+  @include media(desktop) {
+  }
+}
+
+.mentors-container {
+  @include media(desktop) {
+  }
+}
+
+.mentors-content-wrapper {
+  padding: 30px 16px;
+  border-radius: 8px;
+  background-image: url(../img/mentors/mentors-bg-mob.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  @include media(desktop) {
+    padding: 60px 30px;
+    background-image: url(../img/mentors/mentors-bg-desk.png);
+  }
+}
+
+.mentors-title {
+  @include media(desktop) {
+  }
+}
+
+.mentors-subtitle {
+  @include media(desktop) {
+  }
+}
+
+.mentors-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+  }
+}
+
+.mentors-list-item {
+  width: 100%;
+  max-width: 311px;
+
+  @include media(desktop) {
+    max-width: 375px;
+  }
+}
+
+.mentors-img {
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+  }
+}

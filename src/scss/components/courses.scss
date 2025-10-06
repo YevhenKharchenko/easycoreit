@@ -1,13 +1,10 @@
-.courses-wrapper {
-  @include media(desktop) {
-  }
-}
-
 .courses-section {
-  padding-bottom: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
   @include media(desktop) {
-    padding-bottom: 100px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -17,12 +14,13 @@
 }
 
 .courses-content-wrapper {
-  background: #f4f7ff;
-  border-radius: 20px;
-  padding: 30px 16px;
+  background-image: url(../img/courses/courses-bg-mob.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
 
   @include media(desktop) {
-    padding: 60px 40px;
+    background-image: url(../img/courses/courses-bg-desk.png);
   }
 }
 
@@ -50,27 +48,41 @@
 }
 
 .courses-list-item {
+  background: #1b1b1b;
+  border: 1px solid #353233;
+  border-radius: 8px;
+  padding: 40px;
   width: 100%;
-  max-width: 311px;
+  max-width: 343px;
+  min-height: 264px;
   display: flex;
-  gap: 16px;
+  flex-direction: column;
+  gap: 24px;
 
   @include media(desktop) {
-    max-width: 368px;
+    max-width: 374px;
+    min-height: 264px;
   }
 }
 
-.courses-icon-wrapper {
-  background: #351bf8;
-  border-radius: 4px;
-  min-width: 60px;
-  height: 60px;
+.courses-item-top-wrapper {
+  padding-bottom: 16px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  gap: 16px;
+  position: relative;
 
   @include media(desktop) {
   }
+}
+
+.courses-item-top-wrapper::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, #aeaeae, transparent);
 }
 
 .courses-icon {
@@ -78,29 +90,12 @@
   }
 }
 
-.courses-item-text-wrapper {
-  @include media(desktop) {
-  }
-}
-
-.courses-list-item-title {
-  font-family: 'Manrope', sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.33333;
-  color: #111;
-  margin-bottom: 4px;
-
-  @include media(desktop) {
-  }
-}
-
 .courses-list-item-text {
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #565656;
+  color: #aeaeae;
 
   @include media(desktop) {
   }
