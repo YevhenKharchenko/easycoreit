@@ -1,5 +1,5 @@
 .header {
-  background: #351bf8;
+  background: rgba(27, 27, 27, 0.6);
   padding-top: 6px;
   padding-bottom: 6px;
   position: fixed;
@@ -32,6 +32,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 8px;
 
   @include media(desktop) {
   }

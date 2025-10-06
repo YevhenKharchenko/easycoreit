@@ -1,5 +1,5 @@
 .cookie-banner-section {
-  background: #fff;
+  background: #606060;
   padding: 40px 16px;
   width: 100%;
   max-width: 375px;
@@ -31,7 +31,7 @@
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
-  color: #1c3f3a;
+  color: #aeaeae;
   margin-bottom: 20px;
 
   @include media(desktop) {
@@ -57,20 +57,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #0d6b4a;
-  border-radius: 4px;
-  padding: 16px 32px;
+  background: #007519;
+  border-radius: 8px;
+  padding: 12px 32px;
   font-family: 'Inter', sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
-  text-transform: uppercase;
-  color: #fff;
+  color: #e9dbc5;
   width: 100%;
   max-width: 343px;
 
+  &:hover,
+  &:focus,
+  &:active {
+    background: #005813;
+  }
+
   @include media(desktop) {
-    width: 184px;
+    max-width: max-content;
   }
 }
 
@@ -78,20 +83,26 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #272727;
-  border-radius: 4px;
-  padding: 16px 32px;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  padding: 11px 31px;
   font-family: 'Inter', sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
-  text-transform: uppercase;
-  color: #272727;
+  color: #fff;
   width: 100%;
   max-width: 343px;
 
+  &:hover,
+  &:focus,
+  &:active {
+    background: #fff;
+    color: #3e3e3e;
+  }
+
   @include media(desktop) {
-    width: 184px;
+    max-width: max-content;
   }
 }
 
