@@ -33,6 +33,7 @@
 
 .advantages-subtitle {
   @include media(desktop) {
+    margin-bottom: 24px;
   }
 }
 

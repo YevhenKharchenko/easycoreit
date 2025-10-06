@@ -6,6 +6,7 @@
 .about-section {
   padding-top: 80px;
   padding-bottom: 90px;
+  scroll-margin-top: 0;
 
   @include media(desktop) {
     padding-top: 120px;
