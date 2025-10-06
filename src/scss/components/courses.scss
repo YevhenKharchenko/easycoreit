@@ -86,6 +86,8 @@
 }
 
 .courses-icon {
+  min-width: 48px;
+
   @include media(desktop) {
   }
 }
